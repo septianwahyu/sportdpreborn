@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_marginLeft="8dp"
+                        android:id="@+id/tv_urut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="1"  />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_rank"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textSize="22sp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_team_badge_s"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/team_badge"/>
+
+                    <TextView
+                        android:id="@+id/tv_team_name_s"
+                        android:layout_width="184dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Man City"
+                        android:textSize="22sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_mp"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="22sp"
+                        android:text="38"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/tv_w"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="22sp"
+                        android:text="27"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/tv_d"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="22sp"
+                        android:text="5"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/tv_l"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="22sp"
+                        android:text="6"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/tv_gf"
+                        android:layout_width="42dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:gravity="center"
+                        android:textSize="22sp"
+                        android:text="83"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/tv_ga"
+                        android:layout_width="42dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="22sp"
+                        android:text="32"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/tv_gd"
+                        android:layout_width="42dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="22sp"
+                        android:text="51"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/tv_pts"
+                        android:layout_width="42dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="22sp"
+                        android:text="86"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/tv_form"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="22sp"
+                        android:text="WLWL"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</LinearLayout>

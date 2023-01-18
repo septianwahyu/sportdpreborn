@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentDetails">
+    
+    <ScrollView
+        android:id="@+id/parentScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp">
+
+            <LinearLayout
+                android:id="@+id/ll_league_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:text="League Name"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_league_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="American Major League Soccer"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_alt_league_name"
+                android:layout_below="@id/ll_league_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:text="League Alternate Name"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_alt_league_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MLS, Major League Soccer"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_cur_season"
+                android:layout_below="@id/ll_alt_league_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:text="Current Season"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_cur_season"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2021"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_formed_year"
+                android:layout_below="@id/ll_cur_season"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:text="Formed Year"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_formed_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1993"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_first_event"
+                android:layout_below="@id/ll_formed_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:text="First Event"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_first_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2013-03-02"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_country"
+                android:layout_below="@id/ll_first_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:text="Country"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="United States"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_website"
+                android:layout_below="@id/ll_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_www"/>
+
+                <TextView
+                    android:id="@+id/tv_website"
+                    android:gravity="center|left"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="none" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_facebook"
+                android:layout_below="@id/ll_website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_facebook"/>
+
+                <TextView
+                    android:id="@+id/tv_facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center|left"
+                    android:text="none" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_twitter"
+                android:layout_below="@id/ll_facebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_twitter"/>
+
+                <TextView
+                    android:id="@+id/tv_twitter"
+                    android:gravity="center|left"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="none" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_youtube"
+                android:layout_below="@id/ll_twitter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_youtube"/>
+
+                <TextView
+                    android:id="@+id/tv_youtube"
+                    android:gravity="center|left"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="none" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_desc"
+                android:layout_below="@id/ll_youtube"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/childScrollView"
+                android:layout_below="@id/ll_desc"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@drawable/iv_rv_outline"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="40dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Major League Soccer (MLS) is a professional soccer league representing the sport's highest level in both the United States and Canada. MLS constitutes one of the major professional sports leagues of the United States and Canada. The league is composed of 20 teams—17 in the U.S. and 3 in Canada. The MLS regular season runs from March to October, with each team playing 34 games; the team with the best record is awarded the Supporters' Shield. The post season includes twelve teams competing in the MLS Cup Playoffs through November and December, culminating in the championship game, the MLS Cup. MLS teams also play in other competitions against teams from other divisions and countries, such as the U.S. Open Cup, the Canadian Championship, and the CONCACAF Champions League. MLS is sanctioned by the United States Soccer Federation (U.S. Soccer).\r\n\r\nMajor League Soccer was founded in 1993 as part of the United States' successful bid to host the 1994 FIFA World Cup. The first season took place in 1996 with ten teams. MLS experienced financial and operational struggles in its first few years: The league lost millions of dollars, teams played in mostly empty American football stadiums, and two teams folded in 2002. Since then, MLS has expanded to 20 teams, owners built soccer-specific stadiums, average attendance at MLS matches exceeds that of the National Basketball Association (NBA) and the National Hockey League (NHL), MLS secured national TV contracts, and the league is now profitable.\r\n\r\nInstead of operating as an association of independently owned teams, MLS is a single entity in which each team is owned and controlled by the league's investors. The investor-operators control their teams as owners control teams in other leagues, and are commonly (but inaccurately) referred to as the team's owners. The league's closed membership makes it one of the world's few soccer leagues that does not use promotion and relegation, which is uncommon in North America. MLS headquarters are in New York City."/>
+
+            </ScrollView>
+
+        </RelativeLayout>
+        
+    </ScrollView>
+    
+</FrameLayout>
